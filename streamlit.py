@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Load TFLite model
-@st.cache_resource
+#@st.cache_resource
 def load_tflite_model():
     interpreter = tf.lite.Interpreter(model_path="model_letah.tflite")
     interpreter.allocate_tensors()
