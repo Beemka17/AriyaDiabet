@@ -1,5 +1,4 @@
 streamlit
-tensorflow-cpu
 tensorflow
 numpy>=1.22
 Pillow>=9.0.0
