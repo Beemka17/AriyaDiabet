@@ -132,7 +132,7 @@ elif selected == "Deteksi":
             #st.write("Prediksi Mentah:", prediction)
             #st.write("Prediksi Index:", pred_index)
             #st.write("Label:", pred_label)
-        st.image(image, caption="Gambar yang Diunggah", use_container_width=True)
+        st.image(image, caption="Gambar yang Diunggah", use_column_width=True)
         #print(prediction)
         #print(np.sum(prediction))
         #print(np.argmax(prediction))
