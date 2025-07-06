@@ -51,20 +51,19 @@ with st.sidebar:
 # Konten Berdasarkan Menu yang Dipilih
 if selected == "Dashboard":
     st.title("Selamat Datang di Aplikasi Deteksi Diabetes Mellitus")
-    st.write("""
-        Aplikasi ini membantu mendeteksi kemungkinan diabetes mellitus berdasarkan citra lidah pasien 
-        menggunakan model deep learning berbasis TensorFlow Lite. Aplikasi ini merupakan hasil penelitian yang berjudul **"PEMANFAATAN ALGORITMA CONVOLUTIONAL NEURAL NETWORK DALAM MEN-DIAGNOSA PENYAKIT DIABETES MELLITUS MENGGUNAKAN CITRA LIDAH"**
-    """)
-    st.divider()
-    st.subheader("Latar Belakang Aplikasi & Abstrak Penelitian:")
-    st.write("""Diabetes melitus merupakan penyakit metabolik kronis yang ditandai oleh peningkatan kadar glukosa darah sebagai akibat dari gangguan sekresi maupun resistensi insulin. 
-             Di Indonesia, jumlah penderita diabetes terus meningkat secara signifikan setiap tahunnya, menjadikannya salah satu masalah kesehatan utama yang perlu segera diatasi. 
-             Salah satu gejala fisik yang dapat diamati dari penderita diabetes melitus adalah perubahan kondisi lidah, seperti munculnya lapisan putih kekuningan atau retakan. 
-             Penelitian ini bertujuan untuk mengembangkan sistem diagnosis dini penyakit diabetes melitus melalui analisis citra lidah menggunakan algoritma Convolutional Neural Network (CNN), 
-             dengan harapan dapat memberikan solusi diagnosis yang cepat, akurat, dan dapat diakses dengan mudah oleh masyarakat. Model CNN dalam penelitian ini berhasil mencapai akurasi sebesar 0.79
-            dalam mengklasifikasikan citra lidah penderita diabetes dan non-diabetes. Selain itu, model ini telah diimplementasikan ke dalam platform aplikasi berbasis web, sehingga memungkinkan pengguna umum 
-             untuk melakukan diagnosis secara mandiri melalui citra lidah. Hasil dari penelitian ini diharapkan dapat berkontribusi dalam upaya deteksi dini diabetes melitus serta menjadi dasar pengembangan sistem 
-             serupa di masa depan yang lebih optimal dan akurat.""")
+    st.markdown("""
+    Aplikasi ini membantu mendeteksi kemungkinan diabetes mellitus berdasarkan citra lidah pasien 
+    menggunakan model deep learning berbasis TensorFlow Lite. Aplikasi ini merupakan hasil penelitian yang berjudul **"PEMANFAATAN ALGORITMA CONVOLUTIONAL NEURAL NETWORK DALAM MEN-DIAGNOSA PENYAKIT DIABETES MELLITUS MENGGUNAKAN CITRA LIDAH"**
+    
+    ### Abstrak Penelitian
+    Diabetes melitus merupakan penyakit metabolik kronis yang ditandai oleh peningkatan kadar glukosa darah sebagai akibat dari gangguan sekresi maupun resistensi insulin. 
+    Di Indonesia, jumlah penderita diabetes terus meningkat secara signifikan setiap tahunnya, menjadikannya salah satu masalah kesehatan utama yang perlu segera diatasi. 
+    Salah satu gejala fisik yang dapat diamati dari penderita diabetes melitus adalah perubahan kondisi lidah, seperti munculnya lapisan putih kekuningan atau retakan. 
+    Penelitian ini bertujuan untuk mengembangkan sistem diagnosis dini penyakit diabetes melitus melalui analisis citra lidah menggunakan algoritma Convolutional Neural Network (CNN), 
+    dengan harapan dapat memberikan solusi diagnosis yang cepat, akurat, dan dapat diakses dengan mudah oleh masyarakat. Model CNN dalam penelitian ini berhasil mencapai akurasi sebesar 0.79
+    dalam mengklasifikasikan citra lidah penderita diabetes dan non-diabetes. Selain itu, model ini telah diimplementasikan ke dalam platform aplikasi berbasis web, sehingga memungkinkan pengguna umum 
+    untuk melakukan diagnosis secara mandiri melalui citra lidah. Hasil dari penelitian ini diharapkan dapat berkontribusi dalam upaya deteksi dini diabetes melitus serta menjadi dasar pengembangan sistem 
+    serupa di masa depan yang lebih optimal dan akurat.""")
 
 elif selected == "Pengertian Diabetes":
     st.title("Pengertian Penyakit Diabetes")
